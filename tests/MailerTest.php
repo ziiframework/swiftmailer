@@ -9,7 +9,7 @@ Yii::setAlias('@yii/swiftmailer', __DIR__ . '/../../../../extensions/swiftmailer
 
 class MailerTest extends TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         $this->mockApplication([
             'components' => [
