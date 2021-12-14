@@ -19,7 +19,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "ziiframework/zii": "~3.4.0",
+        "ziiframework/zii": "~3.5.1",
         "swiftmailer/swiftmailer": "~6.3"
     },
     "require-dev": {
