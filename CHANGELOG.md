@@ -1,6 +1,8 @@
 Yii Framework 2 swiftmailer extension Change Log
 ================================================
 
+Upstream Changes: [2472a38...master](https://github.com/yiisoft/yii2-swiftmailer/compare/2472a38...master)
+
 2.1.4 under development
 -----------------------
 
