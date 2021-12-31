@@ -17,7 +17,10 @@ jobs:
 
     steps:
       - name: Install sendmail
-        run: sudo apt-get install -y sendmail
+        run: |
+          sudo apt-get -y update
+          sudo apt-get -y upgrade
+          sudo apt-get -y install sendmail
 
       - name: Checkout
         uses: actions/checkout@v2
@@ -34,17 +37,5 @@ jobs:
           composer self-update -vvv
           composer install $DEFAULT_COMPOSER_FLAGS
 
-      - name: Run unit tests with coverage
-        run: vendor/bin/phpunit --verbose --coverage-clover=coverage.clover --colors=always
-        if: matrix.php == '7.4'
-
-      - name: Run unit tests without coverage
+      - name: PHPUnit
         run: vendor/bin/phpunit --verbose --colors=always
-        if: matrix.php != '7.4'
-
-      - name: Upload code coverage
-        run: |
-          wget https://scrutinizer-ci.com/ocular.phar
-          php ocular.phar code-coverage:upload --format=php-clover coverage.clover
-        if: matrix.php == '7.4'
-        continue-on-error: true # if is fork
