@@ -18,6 +18,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
+        "php": ">=7.4.0",
         "ziiframework/zii": ">=3.5.0",
         "swiftmailer/swiftmailer": "~6.3"
     },
@@ -27,7 +28,33 @@
     "autoload": {
         "psr-4": {
             "yii\\swiftmailer\\": "src/"
+        },
+        "exclude-from-classmap": [
+            "/tests/"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "yiiunit\\extensions\\swiftmailer\\": "tests/"
         }
+    },
+    "config": {
+        "platform": {
+            "php": "7.4"
+        },
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "allow-plugins": {
+            "ziiframework/composer": true
+        }
+    },
+    "scripts": {
+        "redo-install": [
+            "rm -rf vendor/",
+            "rm -f composer.lock",
+            "@composer self-update -vvv",
+            "@composer install -vvv"
+        ]
     },
     "extra": {
         "branch-alias": {
