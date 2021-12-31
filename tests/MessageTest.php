@@ -510,7 +510,7 @@ U41eAdnQ3dDGzUNedIJkSh6Z0A4VMZIEOag9hPNYqQXZBQgfobvPKw==
             ->toString();
 
         $this->assertStringContainsString('Some: override', $messageString, 'Unable to set header!');
-        $this->assertNotContains('Some: foo', $messageString, 'Unable to override header!');
+        $this->assertStringNotContainsString('Some: foo', $messageString, 'Unable to override header!');
         $this->assertStringContainsString('Multiple: value1', $messageString, 'First value of multiple header lost!');
         $this->assertStringContainsString('Multiple: value2', $messageString, 'Second value of multiple header lost!');
 
