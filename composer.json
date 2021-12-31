@@ -1,6 +1,6 @@
 {
     "name": "ziiframework/swiftmailer",
-    "description": "zii-framework",
+    "description": "The SwiftMailer integration for zii-framework",
     "keywords": ["zii-framework", "swiftmailer"],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
@@ -12,21 +12,22 @@
         {
             "name": "Yii Team",
             "email": "team@yiiframework.com",
-            "homepage": "http://www.yiiframework.com/team",
-            "role": "Founder and project lead"
+            "homepage": "https://www.yiiframework.com/team"
         }
     ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "ziiframework/zii": ">=3.4.0",
+        "ziiframework/zii": ">=3.5.0",
         "swiftmailer/swiftmailer": "~6.3"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.5"
     },
     "autoload": {
-        "psr-4": { "yii\\swiftmailer\\": "src" }
+        "psr-4": {
+            "yii\\swiftmailer\\": "src/"
+        }
     },
     "extra": {
         "branch-alias": {
