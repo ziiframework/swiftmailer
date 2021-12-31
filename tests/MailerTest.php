@@ -109,7 +109,7 @@ class MailerTest extends TestCase
         $mailer->setTransport($transportConfig);
         $transport = $mailer->getTransport();
         $this->assertTrue(is_object($transport), 'Unable to setup transport via config!');
-        $this->assertStringContainsString(':' . $pluginClass . ':', print_r($transport, true), 'Plugin not added');
+        $this->assertContains(':' . $pluginClass . ':', print_r($transport, true), 'Plugin not added');
     }
 
     public function testGetSwiftMailer()
