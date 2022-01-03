@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "44443d4fccac8dcf18b4a5c03aefa037",
+    "content-hash": "bea9f794821d4142bcaba31729acf7f8",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -837,16 +837,16 @@
         },
         {
             "name": "ziiframework/composer",
-            "version": "3.4.0",
+            "version": "3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ziiframework/composer.git",
-                "reference": "40e33a2651bba9f2f7a86a735dea8ec191dd9703"
+                "reference": "e474341f534696eec22686a23bfab865ce40083b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ziiframework/composer/zipball/40e33a2651bba9f2f7a86a735dea8ec191dd9703",
-                "reference": "40e33a2651bba9f2f7a86a735dea8ec191dd9703",
+                "url": "https://api.github.com/repos/ziiframework/composer/zipball/e474341f534696eec22686a23bfab865ce40083b",
+                "reference": "e474341f534696eec22686a23bfab865ce40083b",
                 "shasum": ""
             },
             "require": {
@@ -891,20 +891,20 @@
                 "issues": "https://github.com/ziiframework/composer/issues",
                 "source": "https://github.com/ziiframework/composer"
             },
-            "time": "2021-12-27T10:52:12+00:00"
+            "time": "2021-12-31T09:08:30+00:00"
         },
         {
             "name": "ziiframework/zii",
-            "version": "3.5.5",
+            "version": "3.5.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ziiframework/zii.git",
-                "reference": "d478ca4ba6c72d046100fe8470ef190d1ffd1a03"
+                "reference": "0b9023bbe6b955990d4fc092af8f414cd21d5032"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ziiframework/zii/zipball/d478ca4ba6c72d046100fe8470ef190d1ffd1a03",
-                "reference": "d478ca4ba6c72d046100fe8470ef190d1ffd1a03",
+                "url": "https://api.github.com/repos/ziiframework/zii/zipball/0b9023bbe6b955990d4fc092af8f414cd21d5032",
+                "reference": "0b9023bbe6b955990d4fc092af8f414cd21d5032",
                 "shasum": ""
             },
             "require": {
@@ -917,7 +917,7 @@
                 "lib-pcre": "*",
                 "php": ">=7.4.0",
                 "symfony/polyfill-php80": "^1.23",
-                "ziiframework/composer": "~3.4.0"
+                "ziiframework/composer": ">=3.5.0"
             },
             "require-dev": {
                 "cebe/indent": "^1.0",
@@ -962,7 +962,7 @@
                 "issues": "https://github.com/ziiframework/zii/issues?state=open",
                 "source": "https://github.com/ziiframework/zii"
             },
-            "time": "2021-12-31T07:36:44+00:00"
+            "time": "2022-01-03T04:59:05+00:00"
         }
     ],
     "packages-dev": [
@@ -2751,5 +2751,5 @@
     "platform-overrides": {
         "php": "7.4"
     },
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.1.0"
 }
