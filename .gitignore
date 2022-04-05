@@ -1,6 +1,7 @@
-
-Thumbs.db
-.DS_Store
-
 /.idea/
-/vendor
+/vendor/
+
+/Thumbs.db
+/.DS_Store
+
+/composer.lock
