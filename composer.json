@@ -19,7 +19,7 @@
     "prefer-stable": true,
     "require": {
         "php": ">=7.4.0",
-        "ziiframework/zii": ">=3.5.0",
+        "ziiframework/zii": ">=3.6.7",
         "swiftmailer/swiftmailer": "^6.3"
     },
     "require-dev": {
