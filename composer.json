@@ -23,7 +23,7 @@
         "swiftmailer/swiftmailer": "^6.3"
     },
     "require-dev": {
-        "phpunit/phpunit": "^8.5"
+        "phpunit/phpunit": "^9.6"
     },
     "autoload": {
         "psr-4": {
